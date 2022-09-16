@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 915px;
+    background: black;
+}
+/* cadre lumineau */
+.haut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding: 14px, 17px;
+    position: relative;
+    background-color: #151515;
+    border: 27px solid;
+    border-image:
+    linear-gradient(
+          #FFFF00, 
+           #87CEEB,
+           #ff512f,
+           #dd2476,
+           #1c64ff) 1;
+    animation: rotate
+     2.5s
+     ease-in infinite;}
+
+
+@keyframes rotate {
+    50%{
+        border-image: 
+        linear-gradient(
+            360deg,
+            #FFFF00, 
+            #87CEEB,
+            #ff512f,
+            #dd2476,
+            #1c64ff) 1;
+    }
+}
+.fig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 350px; 
+    animation: 7s infinite img;
+}
+@keyframes img{
+    50%{
+        transform: scale(0.8, 0.8);
+    }
+}
+.nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 350px;
+    border-radius: 27px;
+    border: 1px solid whitesmoke;
+    background:  
+     linear-gradient(60deg,
+        #FFFF00, 
+         #87CEEB,
+         #ff512f,
+         #dd2476,
+         #1c64ff);
+         animation: 4s infinite title;
+}
+
+
+
+@keyframes title{
+    50%{
+        background: 
+        linear-gradient(60deg,
+        #1c64ff,
+        #dd2476,
+        #ff512f,
+        #87ceeb,
+        #ffff00);
+    }
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
